@@ -3,8 +3,9 @@ Follow and analyze your IoT data with Splunk. Get and use Splunk to understand a
 
 # Splunk to value your Live Objects IoT data
 
-    “Splunk’s core offering collects and analyzes high volumes of machine-generated data. It was developed in response to the demand for comprehensible and actionable data reporting for executives outside a company’s IT department.”
-    Wikipedia
+__Splunk’s core offering collects and analyzes high volumes of machine-generated data. It was developed in response to the demand for comprehensible and actionable data reporting for executives outside a company’s IT department.__
+
+__Wikipedia__
 
 # Get and easily install Splunk
 
