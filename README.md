@@ -1,19 +1,19 @@
 # Connect-Live-Objects-to-Splunk
 Follow and analyze your IoT data with Splunk. Get and use Splunk to understand and value your Live Objects IoT data (free version available!)
 
-
-
-Splunk to value your Live Objects IoT data
+# Splunk to value your Live Objects IoT data
 
     “Splunk’s core offering collects and analyzes high volumes of machine-generated data. It was developed in response to the demand for comprehensible and actionable data reporting for executives outside a company’s IT department.”
     Wikipedia
 
-Get and easily install Splunk
+# Get and easily install Splunk
 
 Splunk Free is for individual use. Splunk Entreprise & Splunk Cloud give you multi users and distributed capabilities.
 
 To download free version & see the compared functionalities go to https://www.splunk.com/en_us/software/features-comparison-chart.html
-then connect HEC Live Objects / Splunk
+
+# then connect HEC Live Objects / Splunk
+
 Configuration of HEC in Splunk
 
 First, connect you with a browser on your Splunk Web instance at :
@@ -26,12 +26,16 @@ Go to « Settings / Data Inputs / http Event Collector / Add new »
 
 Then add a new HEC token (http Event Collector) with (in the following example, no sourcetype has been used and data are pushed into “main” index)
 
+![](images/splunk1.png)
+
 Click on « Global Settings » button:
 
     Click on “Enabled” to activate “All Tokens”
     Select the index you want (for instance “main”)
     If you have no valid SSL certificate, then uncheck « Enable SSL » (the Splunk self-signed certificate does not work with Live Objects’ HTTP push)
     Change the value of the field « HTTP Port Number », and choose one compatible with Live Objects’ HTTP Push feature. For instance « 8443 »
+
+![](images/splunk2.png)
 
 After clicking on “Save”, get the “Token Value” that will be used in the next step.
 
@@ -53,13 +57,20 @@ On Live Objects web interface, go to « Data / Routing », then click on « + Ad
 
 Then choose « + HTTP Push »
 
+![](images/splunk3.png)
+
 Set the values of the following fields:
 
     URL : http://[DNS name]:8443/services/collector/event
     HTTP Headers : “authorization” and “Splunk [Token Value]”
     Message body : choose “A Mustache formatted message” and set the value : {“event”: “{{value}}”}
 
-then value you data
+![](images/splunk4.png)
+
+# then value you data
 
 That’s all, then extract the value from your data
 
+![](images/splunk5.png)
+
+![](images/splunk6.png)
