@@ -70,9 +70,9 @@ Then choose « + HTTP Push »
 
 Set the values of the following fields:
 
-    URL : http://[DNS name]:8443/services/collector/event
-    HTTP Headers : “authorization” and “Splunk [Token Value]”
-    Message body : choose “A Mustache formatted message” and set the value : {“event”: “{{value}}”}
+* URL : http://[DNS name]:8443/services/collector/event
+* HTTP Headers : “authorization” and “Splunk [Token Value]”
+* Message body : choose “A Mustache formatted message” and set the value : {“event”: “{{value}}”}
 
 ![](images/splunk4.png)
 
