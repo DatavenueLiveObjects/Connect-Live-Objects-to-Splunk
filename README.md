@@ -15,7 +15,7 @@ To download free version & see the compared functionalities go to https://www.sp
 
 # then connect HEC Live Objects / Splunk
 
-Configuration of HEC in Splunk
+**Configuration of HEC in Splunk**
 
 First, connect you with a browser on your Splunk Web instance at :
 
@@ -60,7 +60,7 @@ If successful you should get this:
 {"text":"Success","code":0}
 ```
 
-Link Live Objects to it
+# Link Live Objects to it #
 
 On Live Objects web interface, go to « Data / Routing », then click on « + Add a routing rule » button: throw next steps, give the routing the name you want, but do not change the default values.
 
