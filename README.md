@@ -33,10 +33,10 @@ Then add a new HEC token (http Event Collector) with (in the following example, 
 
 Click on « Global Settings » button:
 
-    Click on “Enabled” to activate “All Tokens”
-    Select the index you want (for instance “main”)
-    If you have no valid SSL certificate, then uncheck « Enable SSL » (the Splunk self-signed certificate does not work with Live Objects’ HTTP push)
-    Change the value of the field « HTTP Port Number », and choose one compatible with Live Objects’ HTTP Push feature. For instance « 8443 »
+* Click on “Enabled” to activate “All Tokens”
+* Select the index you want (for instance “main”)
+* If you have no valid SSL certificate, then uncheck « Enable SSL » (the Splunk self-signed certificate does not work with Live Objects’ HTTP push)
+* Change the value of the field « HTTP Port Number », and choose one compatible with Live Objects’ HTTP Push feature. For instance « 8443 »
 
 ![](images/splunk2.png)
 
