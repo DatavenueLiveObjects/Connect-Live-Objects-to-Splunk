@@ -18,7 +18,9 @@ Configuration of HEC in Splunk
 
 First, connect you with a browser on your Splunk Web instance at :
 
+```ruby
 https://[DNS name]:443/
+```
 
 for instance: https://splunk.francecentral.cloudapp.azure.com:443/
 
@@ -41,15 +43,21 @@ After clicking on “Save”, get the “Token Value” that will be used in the
 
 It is possible to test the service with curl:
 
+```ruby
 curl -k http://[DNS name]:8443/services/collector/event -H "authorization: Splunk [Token Value]" -d '{"event": "hello world"}'
+```
 
 For instance :
 
+```ruby
 curl -k http://splunk.francecentral.cloudapp.azure.com:8443/services/collector/event -H "authorization: Splunk d487f324-fbf6-4eb3-807e-cd962db26f89" -d '{"event": "hello world"}' )
+```
 
 If successful you should get this:
 
+```ruby
 {"text":"Success","code":0}
+```
 
 Link Live Objects to it
 
